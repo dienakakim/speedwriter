@@ -119,7 +119,7 @@ export default {
       return moment(0, 'HH')
         .seconds(this.$data.timer)
         .format('m:ss');
-    }
+    },
   }
 };
 </script>

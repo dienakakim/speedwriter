@@ -1,10 +1,16 @@
 <template>
-  <div v-html="$md.render(text)"></div>
+  <div v-dompurify-html="$md.render(text)"></div>
 </template>
 
 <script>
+import Vue from 'vue';
+import VueDOMPurifyHTML from 'vue-dompurify-html';
+Vue.use(VueDOMPurifyHTML);
 export default {
   name: 'MarkdownPreview',
+  components: {
+    VueDOMPurifyHTML
+  },
   props: {
     text: String
   },
