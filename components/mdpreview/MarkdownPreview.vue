@@ -1,11 +1,12 @@
 <template>
-  <div v-dompurify-html="$md.render(text)"></div>
+  <div v-dompurify-html="textMD"></div>
 </template>
 
 <script>
 import Vue from 'vue';
 import VueDOMPurifyHTML from 'vue-dompurify-html';
 Vue.use(VueDOMPurifyHTML);
+import marked from 'marked';
 export default {
   name: 'MarkdownPreview',
   components: {
@@ -15,8 +16,8 @@ export default {
     text: String
   },
   computed: {
-    someMarkdown() {
-      return someMarkdown;
+    textMD() {
+      return marked(this.$props.text);
     }
   }
 };

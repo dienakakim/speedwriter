@@ -34,7 +34,7 @@
       :class="{ hidden: !timerStarted }"
     >
       <div class="flex flex-1 max-h-screen py-4">
-        <div class="w-6/12">
+        <div class="flex-1">
           <!-- Typing area -->
           <textarea
             name="Typing area"
@@ -47,13 +47,12 @@
             :class="{ 'bg-black': !timerEnded, 'bg-transparent': timerEnded }"
           ></textarea>
         </div>
-        <div class="w-1/12 flex justify-center">
+        <div class="flex justify-center px-4">
           <!-- Vertical bar -->
           <div class="border-l-2">
-
           </div>
         </div>
-        <div class="w-5/12 flex">
+        <div class="flex-1 flex">
           <!-- Markdown Preview -->
           <MarkdownPreview
             class="text-gray-200 text-md sm:text-xl lg:text-2xl overflow-auto w-full h-full bg-transparent rounded-lg p-4"
