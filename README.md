@@ -1,6 +1,6 @@
-# timedscript
+# speedwriter
 
-> A speedwriting app for Markdown
+> A speedwriting app with Markdown support
 
 ## Build Setup
 
@@ -20,3 +20,7 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Changing the timer duration
+
+Open `.env` and change the value of `COUNTDOWN_TIMER`.

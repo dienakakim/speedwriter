@@ -70,7 +70,7 @@
 import Logo from '~/components/logo/Logo';
 import MarkdownPreview from '~/components/mdpreview/MarkdownPreview';
 import moment from 'moment';
-let COUNTDOWN_TIMER = 5;
+const COUNTDOWN_TIMER = process.env.COUNTDOWN_TIMER;
 export default {
   name: 'index',
   components: {
@@ -113,7 +113,7 @@ export default {
   },
   computed: {
     title() {
-      return this.$data.timerStarted ? this.timeView : 'TimedScript';
+      return this.$data.timerStarted ? this.timeView : 'SpeedWriter';
     },
     timeView() {
       return moment(0, 'HH')
