@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.0",
-    "marked": "^0.8.1",
+    "marked": "^4.0.10",
     "moment": "^2.24.0",
     "nuxt": "^2.0.0",
     "vue-dompurify-html": "^2.1.1"
